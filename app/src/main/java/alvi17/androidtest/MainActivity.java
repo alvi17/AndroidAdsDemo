@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
+        //to show Banner at the bottom of the screen
         adView=new AdView(this);
         adView.setAdUnitId("ca-app-pub-6508526601344465/7391646435"); //Banner id
         adView.setAdSize(AdSize.BANNER);
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity
 
 
 
-        //full screen ad
+        //full screen ad when the ad is ready
 
         interstitialAd=new InterstitialAd(this);
         interstitialAd.setAdUnitId("ca-app-pub-6508526601344465/2562664039"); //ad unit id
